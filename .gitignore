@@ -1,0 +1,84 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Next.js Build Output
+.next
+out
+
+# NestJS Build Output
+dist
+*.tsbuildinfo
+
+# Turbo
+.turbo
+
+# IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea
+.nova
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun-debug.log*
+*.log
+logs
+*.log.temp
+
+# Testing
+coverage
+.nyc_output
+htmlreport
+*.lcov
+
+# Databases (Future proofing)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite-journal
+/prisma/*.db
+/prisma/*.sqlite
+
+# Local configurations
+.vercel
+.turbo/
+.next/
+dist/
+/apps/*/dist
+/apps/*/.next
+/apps/*/out
+
+# Bundlers / Tools
+.env.production
+.yarn/
+.pnp.*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Docker (Future proofing)
+.dockerignore
+!Dockerfile
