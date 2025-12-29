@@ -1,7 +1,11 @@
+import DeveloperInfo from "./components/DeveloperInfo";
+import ProductList from "./components/ProductList";
+
 export default function LandingPage() {
   return (
-    <div>
-      <h1>Portfolio Builder - Landing Page</h1>
+    <div className="flex flex-col md:flex-row">
+      <DeveloperInfo />
+      <ProductList />
     </div>
   );
 }
