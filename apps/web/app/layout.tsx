@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 import "./globals.css";
-import { fredoka } from "./fonts";
+import { rubik } from "./fonts";
 
 export const metadata: Metadata = {
   title: "what i building",
@@ -18,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fredoka.className} antialiased`}>
-        <div className="bg-stone-50 min-h-screen">{children}</div>
+      <body className={`${rubik.className} antialiased`}>
+        <div className="bg-stone-200 min-h-screen">{children}</div>
       </body>
     </html>
   );
