@@ -1,6 +1,6 @@
-import { Fredoka } from "next/font/google";
+import { Rubik } from "next/font/google";
 
-export const fredoka = Fredoka({
+export const rubik = Rubik({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
