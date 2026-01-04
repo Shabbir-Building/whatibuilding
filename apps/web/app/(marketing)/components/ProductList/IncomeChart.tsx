@@ -1,6 +1,6 @@
 "use client";
 
-import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts";
+import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import {
   ChartContainer,
   ChartTooltip,
@@ -10,7 +10,7 @@ import { chartConfig, monthlyIncomeData } from "./constants";
 
 export default function IncomeChart() {
   return (
-    <ChartContainer config={chartConfig} className="h-32.5 w-full px-3">
+    <ChartContainer config={chartConfig} className="h-24 w-full px-3">
       <AreaChart
         data={monthlyIncomeData}
         margin={{
@@ -34,7 +34,7 @@ export default function IncomeChart() {
             />
           </linearGradient>
         </defs>
-        <CartesianGrid strokeDasharray="3 3" vertical={false} />
+        <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
         <XAxis
           dataKey="month"
           tickLine={false}

@@ -27,7 +27,7 @@ export default function DeveloperInfo() {
 
           <Link
             href="https://www.google.com/maps/place/Bangladesh/data=!4m2!3m1!1s0x30adaaed80e18ba7:0xf2d28e0c4e1fc6b?sa=X&ved=1t:242&ictx=111"
-            className="flex items-center gap-1 text-sm mt-2 text-neutral-700 hover:text-blue-500 transition"
+            className="w-fit flex items-center gap-1 text-sm mt-2 text-neutral-700 hover:text-blue-500 transition"
             target="_blank"
           >
             <MapPin size={12} />
