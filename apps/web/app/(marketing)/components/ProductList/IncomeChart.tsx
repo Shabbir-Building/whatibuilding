@@ -6,13 +6,18 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { chartConfig, monthlyIncomeData } from "./constants";
+import { chartConfig } from "./constants";
+import type { EarningsDatum } from "./types";
 
-export default function IncomeChart() {
+export const IncomeChart = ({
+  earningsData,
+}: {
+  earningsData: EarningsDatum[];
+}) => {
   return (
-    <ChartContainer config={chartConfig} className="h-24 w-full px-3">
+    <ChartContainer config={chartConfig} className="w-full px-3 h-24">
       <AreaChart
-        data={monthlyIncomeData}
+        data={earningsData}
         margin={{
           left: 12,
           right: 12,
@@ -97,4 +102,4 @@ export default function IncomeChart() {
       </AreaChart>
     </ChartContainer>
   );
-}
+};
