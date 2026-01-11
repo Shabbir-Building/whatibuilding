@@ -41,24 +41,54 @@ export const EARNINGS_STATUS = {
   CONFIDNETIALS: 3,
 };
 
+export const WORK_TYPE = {
+  SOLO: 1,
+  TEAM: 2,
+};
+
+export const WORK_TYPE_NAME = {
+  [WORK_TYPE.SOLO]: "Solo Work",
+  [WORK_TYPE.TEAM]: "Team Work",
+};
+
 export const productList = [
   {
     name: "Chattrn",
     productLink: "https://www.chattrn.com/",
+    githubLink: "https://github.com/Shabbir-Building/Chattrn",
+    techStack: [
+      "Nextjs",
+      "React.js",
+      "Tailwind",
+      "Mongodb",
+      "Nextjs",
+      "React.js",
+      "Tailwind",
+      "Nextjs",
+      "React.js",
+      "Tailwind",
+      "Mongodb",
+      "Mongodb",
+    ],
     imageSrc: "/chattrn.png",
     description: "Let the AI agent handle your customer",
     activeUsers: 7,
     earningsStatus: EARNINGS_STATUS.CONFIDNETIALS,
+    workType: WORK_TYPE.TEAM,
   },
   {
     name: "Talk Expense",
     productLink: "https://www.talkexpense.com/",
+    githubLink: "https://github.com/Shabbir-Building/talk-expense",
+    techStack: [],
     imageSrc: "/talk-expense.png",
-    description: "Track your expenses easy with AI voice assistant",
+    description: "AI assistant for tracking your daily expenses",
     activeUsers: 1,
     earningsStatus: EARNINGS_STATUS.NO_EARNINGS,
     earningsData: monthlyZeroIncomeData,
+    workType: WORK_TYPE.SOLO,
   },
+
   // {
   //   name: "SalesBot",
   //   imageSrc: "/profile-image.png",
