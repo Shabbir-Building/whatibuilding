@@ -1,5 +1,5 @@
 import type { StaticImageData } from "next/image";
-import { EARNINGS_STATUS } from "./constants";
+import { EARNINGS_STATUS, WORK_TYPE } from "./constants";
 
 export type EarningsDatum = {
   month: string;
@@ -9,10 +9,13 @@ export type EarningsDatum = {
 export type Product = {
   name: string;
   productLink: string;
+  githubLink?: string;
+  techStack?: string[];
   description?: string;
   activeUsers: number | string;
   earningsData?: EarningsDatum[];
   imageSrc: string | StaticImageData;
+  workType: (typeof WORK_TYPE)[keyof typeof WORK_TYPE];
   earningsStatus:
     | (typeof EARNINGS_STATUS)[keyof typeof EARNINGS_STATUS]
     | string;
