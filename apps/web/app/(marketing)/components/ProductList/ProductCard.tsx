@@ -57,7 +57,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           )}
         </div>
       </HoverCardTrigger>
-      <HoverCardContent className="w-full border-none min-w-114 max-w-114 h-fit overflow-y-auto shadow-lg">
+      <HoverCardContent className="w-full border-none min-w-87 max-w-87 md:min-w-114 md:max-w-114 h-fit overflow-y-auto shadow-lg">
         <HoverCardArrow className="fill-white" />
         <ProductHoverCard product={product} />
       </HoverCardContent>
