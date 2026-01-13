@@ -19,10 +19,10 @@ export default function DeveloperInfo() {
           className="rounded-full size-22 md:size-45"
         />
         <div className="md:space-y-1 flex flex-col">
-          <h1 className="text-xl md:text-4xl font-semibold text-neutral-700">
+          <h1 className="text-2xl md:text-4xl font-semibold text-neutral-700">
             Amdad Shabbir
           </h1>
-          <p className="text:md md:text-xl text-neutral-700">
+          <p className="text-sm md:text-xl text-neutral-700">
             Full Stack Software Engineer
           </p>
 
