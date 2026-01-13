@@ -14,13 +14,13 @@ import { ProductHoverCard } from "./ProductHoverCard";
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <HoverCard openDelay={100} closeDelay={10}>
+    <HoverCard openDelay={100} closeDelay={50}>
       <HoverCardTrigger asChild>
         <div className="bg-white w-full max-w-120 rounded-2xl pb-3 overflow-visible h-fit flex flex-col">
           <Link
             href={product.productLink}
             target="_blank"
-            className="block p-5 w-full rounded-2xl hover:scale-103 hover:bg-neutral-300 transition"
+            className="group block p-5 w-full rounded-2xl hover:scale-103 hover:bg-neutral-300 transition"
           >
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-2">
@@ -29,6 +29,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
                   src={product.imageSrc}
                   width={24}
                   height={24}
+                  className="group-hover:-rotate-12 group-hover:scale-110 transition-transform rounded-md"
                 />
                 <h2 className="text-md font-semibold">{product.name}</h2>
               </div>

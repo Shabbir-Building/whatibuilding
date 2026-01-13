@@ -51,11 +51,16 @@ export const WORK_TYPE_NAME = {
   [WORK_TYPE.TEAM]: "Team Work",
 };
 
+export const CONTRIBUTION_TEXT = {
+  [WORK_TYPE.SOLO]: "Built with",
+  [WORK_TYPE.TEAM]: "I contributed with",
+};
+
 export const productList = [
   {
     name: "Chattrn",
     productLink: "https://www.chattrn.com/",
-    githubLink: "https://github.com/Shabbir-Building/Chattrn",
+    githubLink: "https://github.com/chattrn-dev",
     techStack: [
       "Typescript",
       "Reactjs",
@@ -63,6 +68,8 @@ export const productList = [
       "Tailwind",
       "Material UI",
       "Redux RTK",
+      "Zod",
+      "React Hook Form",
       "Web Socket",
       "Turborepo",
       "Dokploy",
@@ -73,18 +80,20 @@ export const productList = [
     activeUsers: 7,
     earningsStatus: EARNINGS_STATUS.CONFIDNETIALS,
     workType: WORK_TYPE.TEAM,
+    contributionText: CONTRIBUTION_TEXT[WORK_TYPE.TEAM],
   },
   {
     name: "Talk Expense",
     productLink: "https://www.talkexpense.com/",
-    githubLink: "https://github.com/Shabbir-Building/talk-expense",
-    techStack: ["Nextjs", "React.js", "Tailwind", "PostgreSQL"],
+    githubLink: "https://github.com/Shabbir-Building/talkexpense",
+    techStack: [],
     imageSrc: "/talk-expense.png",
     description: "AI assistant for tracking your daily expenses",
     activeUsers: 1,
     earningsStatus: EARNINGS_STATUS.NO_EARNINGS,
     earningsData: monthlyZeroIncomeData,
     workType: WORK_TYPE.SOLO,
+    contributionText: CONTRIBUTION_TEXT[WORK_TYPE.SOLO],
   },
 
   // {

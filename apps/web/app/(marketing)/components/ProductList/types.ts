@@ -12,6 +12,7 @@ export type Product = {
   githubLink?: string;
   techStack?: string[];
   description?: string;
+  contributionText: string;
   activeUsers: number | string;
   earningsData?: EarningsDatum[];
   imageSrc: string | StaticImageData;

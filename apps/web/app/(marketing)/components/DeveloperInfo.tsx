@@ -50,7 +50,7 @@ export default function DeveloperInfo() {
           <div className="flex items-center gap-2">
             <Users size={20} />
             <span className="font-semibold text-xl text-neutral-700">
-              3k Active Users
+              8 Active Users
             </span>
           </div>
         </div>

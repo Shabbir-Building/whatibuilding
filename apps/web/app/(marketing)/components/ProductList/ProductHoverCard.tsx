@@ -25,7 +25,7 @@ export const ProductHoverCard = ({ product }: { product: Product }) => {
       {/* Body */}
       <div className="flex flex-wrap items-center gap-2">
         <p className="text-xs font-medium text-neutral-500 tracking-wider">
-          Contributed with:
+          {product.contributionText}:
         </p>
 
         {product.techStack?.map((tech) => (
