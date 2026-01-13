@@ -1,33 +1,34 @@
-import { MapPin, Box, Users, Github, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Box, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { devSkills } from "../constants";
+import DeveloperSocialLinks from "./DeveloperSocialLinks";
 
 export default function DeveloperInfo() {
   const profileImage = "/profile-image.png";
 
   return (
-    <div className="py-16 w-full md:w-[33%] flex flex-col gap-10 min-h-screen md:h-screen md:overflow-y-auto">
+    <div className="pt-10 md:py-16 w-full md:w-[33%] flex flex-col gap-8 md:gap-10">
       {/* Profile Section */}
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-row gap-6 md:flex-col items-center md:items-start">
         <Image
           alt="profile-image"
           src={profileImage}
           width={180}
           height={180}
-          className="rounded-full"
+          className="rounded-full size-22 md:size-45"
         />
-        <div className="space-y-1">
-          <h1 className="text-4xl font-semibold text-neutral-700">
+        <div className="md:space-y-1 flex flex-col">
+          <h1 className="text-xl md:text-4xl font-semibold text-neutral-700">
             Amdad Shabbir
           </h1>
-          <p className="text-xl text-neutral-700">
+          <p className="text:md md:text-xl text-neutral-700">
             Full Stack Software Engineer
           </p>
 
           <Link
             href="https://www.google.com/maps/place/Bangladesh/data=!4m2!3m1!1s0x30adaaed80e18ba7:0xf2d28e0c4e1fc6b?sa=X&ved=1t:242&ictx=111"
-            className="w-fit flex items-center gap-1 text-sm mt-2 text-neutral-700 hover:text-blue-500 transition"
+            className="w-fit flex items-center gap-1 text-xs md:text-sm mt-1 md:mt-2 text-neutral-700 hover:text-blue-500 transition"
             target="_blank"
           >
             <MapPin size={12} />
@@ -37,19 +38,19 @@ export default function DeveloperInfo() {
       </div>
 
       {/* Bio & Stats */}
-      <div className="space-y-2">
-        <p className="text-xl">I turns ideas into solutions.</p>
+      <div className="space-y-2 flex flex-col items-center md:items-start">
+        <p className="text-lg md:text-xl">I turns ideas into solutions.</p>
 
         <div className="flex items-center gap-6 text-lg">
           <div className="flex items-center gap-2">
             <Box size={20} />
-            <span className="font-semibold text-xl text-neutral-700">
+            <span className="font-semibold text-md md:text-xl text-neutral-700">
               2 Products
             </span>
           </div>
           <div className="flex items-center gap-2">
             <Users size={20} />
-            <span className="font-semibold text-xl text-neutral-700">
+            <span className="font-semibold text-md md:text-xl text-neutral-700">
               8 Active Users
             </span>
           </div>
@@ -67,29 +68,7 @@ export default function DeveloperInfo() {
       </div>
 
       {/* Social Links */}
-      <div className="mt-8 flex items-center gap-8">
-        <Link
-          href="https://github.com/Shabbir-Building"
-          className="hover:scale-120 transition"
-          target="_blank"
-        >
-          <Github size={32} strokeWidth={1} />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/amdadshabbir/"
-          className="hover:scale-120 transition"
-          target="_blank"
-        >
-          <Linkedin size={32} strokeWidth={1} />
-        </Link>
-        <Link
-          href="https://x.com/AmdadulShabbir"
-          className="hover:scale-120 transition"
-          target="_blank"
-        >
-          <Twitter size={32} strokeWidth={1} />
-        </Link>
-      </div>
+      <DeveloperSocialLinks className="hidden md:flex" />
     </div>
   );
 }
