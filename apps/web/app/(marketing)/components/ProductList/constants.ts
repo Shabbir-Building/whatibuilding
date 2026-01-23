@@ -95,6 +95,25 @@ export const productList = [
     workType: WORK_TYPE.SOLO,
     contributionText: CONTRIBUTION_TEXT[WORK_TYPE.SOLO],
   },
+  {
+    name: "Pocket School",
+    productLink: "https://www.pocketschool.academy",
+    githubLink: "https://github.com/HabibulHH/pocketschoolfep",
+    techStack: [
+      "React",
+      "Tailwind",
+      "Redux",
+      "React Hook Form",
+      "Zod",
+      "Figma",
+    ],
+    imageSrc: "/pocketschool.png",
+    description: "LMS platform for learning coding",
+    activeUsers: 142,
+    earningsStatus: EARNINGS_STATUS.CONFIDNETIALS,
+    workType: WORK_TYPE.TEAM,
+    contributionText: CONTRIBUTION_TEXT[WORK_TYPE.TEAM],
+  },
 
   // {
   //   name: "SalesBot",
