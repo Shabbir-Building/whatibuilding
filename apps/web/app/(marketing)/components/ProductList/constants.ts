@@ -108,7 +108,7 @@ export const productList = [
       "Figma",
     ],
     imageSrc: "/pocketschool.png",
-    description: "LMS platform for learning coding",
+    description: "An LMS platform for learning to code.",
     activeUsers: 142,
     earningsStatus: EARNINGS_STATUS.CONFIDNETIALS,
     workType: WORK_TYPE.TEAM,
