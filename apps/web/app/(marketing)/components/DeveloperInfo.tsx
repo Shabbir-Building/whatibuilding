@@ -45,13 +45,13 @@ export default function DeveloperInfo() {
           <div className="flex items-center gap-2">
             <Box size={20} />
             <span className="font-semibold text-md md:text-xl text-neutral-700">
-              2 Products
+              3 Products
             </span>
           </div>
           <div className="flex items-center gap-2">
             <Users size={20} />
             <span className="font-semibold text-md md:text-xl text-neutral-700">
-              8 Active Users
+              150 Active Users
             </span>
           </div>
         </div>
