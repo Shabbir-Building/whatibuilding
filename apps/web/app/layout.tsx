@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import "./globals.css";
 import { rubik } from "./fonts";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "what i building",
@@ -35,7 +36,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${rubik.className} antialiased`}>
-        <div className="bg-stone-200 min-h-screen">{children}</div>
+        <div className="bg-stone-200 min-h-screen">
+          {children}
+          <Analytics />
+        </div>
       </body>
     </html>
   );
