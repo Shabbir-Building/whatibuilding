@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   title: "what i building",
   description: "A sleek, modern platform for building things.",
   icons: {
-    icon: "/favicon.jpeg",
+    icon: [{ url: "/profile-image.jpg", type: "image/jpeg" }],
+    apple: [{ url: "/profile-image.jpg", type: "image/jpeg" }],
   },
 };
 
