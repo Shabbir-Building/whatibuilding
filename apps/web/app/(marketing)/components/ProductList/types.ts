@@ -12,8 +12,9 @@ export type Product = {
   githubLink?: string;
   techStack?: string[];
   description?: string;
+  responsibilityBullets: readonly [string, string, string];
   contributionText: string;
-  activeUsers: number | string;
+  activeUsers?: number | string;
   earningsData?: EarningsDatum[];
   imageSrc: string | StaticImageData;
   workType: (typeof WORK_TYPE)[keyof typeof WORK_TYPE];

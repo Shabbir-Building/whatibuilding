@@ -5,10 +5,10 @@ import { devSkills } from "../constants";
 import DeveloperSocialLinks from "./DeveloperSocialLinks";
 
 export default function DeveloperInfo() {
-  const profileImage = "/profile-image.png";
+  const profileImage = "/profile-image.jpg";
 
   return (
-    <div className="pt-10 md:py-16 w-full md:w-[33%] flex flex-col gap-8 md:gap-10">
+    <div className="pt-10 md:py-16 w-full md:w-[42%] md:min-h-0 md:shrink-0 md:overflow-y-auto md:overscroll-contain scrollbar-hide md:pr-3 flex flex-col gap-8 md:gap-6">
       {/* Profile Section */}
       <div className="flex flex-row gap-6 md:flex-col items-center md:items-start">
         <Image
@@ -23,7 +23,7 @@ export default function DeveloperInfo() {
             Amdad Shabbir
           </h1>
           <p className="text-sm md:text-xl text-neutral-700">
-            Full Stack Software Engineer
+            Full Stack AI Engineer
           </p>
 
           <Link
@@ -38,7 +38,7 @@ export default function DeveloperInfo() {
       </div>
 
       {/* Bio & Stats */}
-      <div className="space-y-2 flex flex-col items-center md:items-start">
+      {/* <div className="space-y-2 flex flex-col items-center md:items-start">
         <p className="text-lg md:text-xl">I turns ideas into solutions.</p>
 
         <div className="flex items-center gap-6 text-lg">
@@ -55,7 +55,7 @@ export default function DeveloperInfo() {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Skills Section */}
       <div className="flex flex-col gap-3">
