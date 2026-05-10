@@ -7,11 +7,9 @@ export default function ProductList() {
       <h2 className="text-2xl font-semibold tracking-tight text-neutral-700 md:text-3xl">
         Works
       </h2>
-      <div className="columns-1 [column-gap:1.75rem] md:columns-2">
+      <div className="grid grid-cols-1 content-start gap-7 md:grid-cols-2 md:items-stretch">
         {productList.map((product) => (
-          <div key={product.name} className="mb-7 break-inside-avoid">
-            <ProductCard product={product} />
-          </div>
+          <ProductCard key={product.name} product={product} />
         ))}
       </div>
     </div>
